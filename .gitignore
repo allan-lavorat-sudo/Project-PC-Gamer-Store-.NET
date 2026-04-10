@@ -18,6 +18,4 @@ node_modules/
 .env.*
 .DS_Store
 msbuild.log
-*.png
-*.webp
 brain/

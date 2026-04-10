@@ -1,59 +1,59 @@
-# 🎮 NexoGamer Store - Premium PC Gamer E-Commerce
+# 🎮 NexoGamer Store - E-Commerce Premium de PC Gamer
 
-NexoGamer is a high-end, dark-themed e-commerce platform built with **ASP.NET Core MVC**. It features a modern, responsive design tailored for the gaming community, with glassmorphic elements and neon accents.
+A NexoGamer é uma plataforma de e-commerce sofisticada, com tema escuro, construída com **ASP.NET Core MVC**. Apresenta um design moderno e responsivo, feito sob medida para a comunidade gamer, com elementos que remetem ao vidro (glassmorphism) e detalhes em neon.
 
-![NexoGamer Showcase](wwwroot/images/preview.png)
+![Apresentação da NexoGamer](wwwroot/images/preview.png)
 
-## 🚀 Key Features
+## 🚀 Principais Características
 
-- **Premium UI/UX**: Dark mode by default with a "Cyberpunk" aesthetic.
-- **Dynamic Product Grid**: Responsive layout showcasing high-performance PC builds.
-- **Product Details**: Comprehensive technical specifications for every machine.
-- **Entry-Level Focus**: Includes specific builds like the GTX 1660 Super for budget gaming.
-- **Shopping Flow**: Fully functional shopping cart and checkout process.
-- **Glassmorphism**: Modern UI components with blur and transparency effects.
+- **UI/UX Premium**: Modo escuro por padrão com estética "Cyberpunk".
+- **Grid de Produtos Dinâmico**: Layout responsivo apresentando builds de PC de alto desempenho.
+- **Detalhes do Produto**: Especificações técnicas completas para cada máquina.
+- **Foco em Entrada**: Inclui builds específicas como a GTX 1660 Super para gamers com orçamento limitado.
+- **Fluxo de Compra**: Carrinho de compras e processo de checkout totalmente funcionais.
+- **Glassmorphism**: Componentes de interface modernos com efeitos de desfoque e transparência.
 
-## 🛠️ Built With
+## 🛠️ Tecnologias Utilizadas
 
 - **Backend**: .NET 8.0 (ASP.NET Core MVC)
 - **Frontend**: Vanilla CSS / HTML5 / JavaScript
-- **Styling**: Bootstrap 5 + Custom Premium CSS
-- **Icons**: Bootstrap Icons
-- **Fonts**: Google Fonts (Inter)
+- **Estilização**: Bootstrap 5 + CSS Premium Personalizado
+- **Ícones**: Bootstrap Icons
+- **Fontes**: Google Fonts (Inter)
 
-## 📦 Project Structure
+## 📦 Estrutura do Projeto
 
-- `Controllers/`: Application logic (Home, Cart).
-- `Models/`: Data structures (Product, ErrorViewModel).
-- `Views/`: Razor templates for the store pages.
-- `wwwroot/`: Static assets (CSS, Images, JS).
+- `Controllers/`: Lógica da aplicação (Home, Cart).
+- `Models/`: Estruturas de dados (Product, ErrorViewModel).
+- `Views/`: Templates Razor para as páginas da loja.
+- `wwwroot/`: Arquivos estáticos (CSS, Imagens, JS).
 
-## 📥 How to Run
+## 📥 Como Executar
 
-1. **Prerequisites**: Ensure you have [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) installed.
-2. **Clone the Repo**:
+1. **Pré-requisitos**: Certifique-se de ter o [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) instalado.
+2. **Clonar o Repositório**:
    ```bash
    git clone https://github.com/allan-lavorat-sudo/Project-PC-Gamer-Store-.NET.git
    cd Project-PC-Gamer-Store-.NET
    ```
-3. **Run the Project**:
+3. **Executar o Projeto**:
    ```bash
    dotnet run
    ```
-4. **Access the Site**: Open `http://localhost:5000` in your browser.
+4. **Acessar o Site**: Abra `http://localhost:5000` no seu navegador.
 
-## 📸 Screenshots
+## 📸 Capturas de Tela
 
-### Homepage
-- High-quality grid of PC builds.
-- Animated hover effects.
+### Página Inicial
+- Grid de alta qualidade de builds de PC.
+- Efeitos de hover animados.
 
-### Details Page
-- Full specifications: CPU, GPU, RAM, SSD.
-- One-click "Add to Cart".
+### Página de Detalhes
+- Especificações completas: CPU, GPU, RAM, SSD.
+- Botão "Adicionar ao Carrinho" com um clique.
 
-## 📜 License
-This project is for demonstration purposes. Images provided by Unsplash.
+## 📜 Licença
+Este projeto é para fins de demonstração. Imagens fornecidas por Unsplash.
 
 ---
-Built with 💚 by Antigravity for Allan.
+Desenvolvido com 💚 por Antigravity para Allan.
