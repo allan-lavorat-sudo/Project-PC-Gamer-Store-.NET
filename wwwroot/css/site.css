@@ -1,0 +1,149 @@
+:root {
+    --bg-dark: #0a0a0b;
+    --card-bg: #141416;
+    --accent: #00ff88;
+    --accent-glow: rgba(0, 255, 136, 0.4);
+    --text-main: #ffffff;
+    --text-muted: #a0a0a5;
+    --glass: rgba(255, 255, 255, 0.03);
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+}
+
+.hero-section {
+    padding: 120px 0 80px;
+    background: radial-gradient(circle at center, #1a1a2e 0%, var(--bg-dark) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.main-title {
+    letter-spacing: -2px;
+    text-shadow: 0 0 30px rgba(0, 255, 136, 0.2);
+    z-index: 1;
+    position: relative;
+}
+
+.text-accent {
+    color: var(--accent);
+}
+
+.product-card {
+    background: var(--card-bg) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 20px !important;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent) !important;
+    box-shadow: 0 20px 40px rgba(0, 255, 136, 0.1);
+}
+
+.image-container {
+    height: 250px;
+    overflow: hidden;
+    background: #000;
+}
+
+.product-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+.btn-description {
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    border-radius: 10px;
+    padding: 8px 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-description:hover {
+    background: var(--accent);
+    color: var(--bg-dark);
+    box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.price-tag {
+    color: var(--accent);
+    font-weight: 800;
+}
+
+.specs-box {
+    backdrop-filter: blur(10px);
+}
+
+.breadcrumb-item a {
+    color: var(--accent) !important;
+    text-decoration: none;
+}
+
+/* Custom Navbar */
+.navbar {
+    background: rgba(10, 10, 11, 0.8) !important;
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: var(--text-muted) !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent) !important;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}

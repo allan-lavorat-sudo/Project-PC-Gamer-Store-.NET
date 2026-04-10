@@ -1,0 +1,11 @@
+﻿  Determinando os projetos a serem restaurados...
+  Todos os projetos est├úo atualizados para restaura├º├úo.
+C:\Users\allan\Downloads\Project NexoGamer Store\Views\Cart\Checkout.cshtml(28,2): error CS0103: O nome "keyframes" n├úo existe no contexto atual [C:\Users\allan\Downloads\Project NexoGamer Store\Project_NexoGamer_Store.csproj]
+
+FALHA da compila├º├úo.
+
+C:\Users\allan\Downloads\Project NexoGamer Store\Views\Cart\Checkout.cshtml(28,2): error CS0103: O nome "keyframes" n├úo existe no contexto atual [C:\Users\allan\Downloads\Project NexoGamer Store\Project_NexoGamer_Store.csproj]
+    0 Aviso(s)
+    1 Erro(s)
+
+Tempo Decorrido 00:00:01.30

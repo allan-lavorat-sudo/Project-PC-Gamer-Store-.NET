@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "Order Complete";
+}
+
+<div class="container py-5 mt-5 text-center">
+    <div class="py-5">
+        <div class="mb-4">
+            <i class="bi bi-check-circle-fill display-1 text-accent animate-pulse"></i>
+        </div>
+        <h1 class="display-4 fw-bold mb-3">CONGRATULATIONS!</h1>
+        <p class="lead text-muted mb-5">Your order for your new NEXO GAMER machine has been received.<br>Prepare for the next level of gaming.</p>
+        
+        <div class="card bg-dark border-secondary border-opacity-25 rounded-4 p-4 d-inline-block text-start" style="max-width: 500px;">
+            <h5 class="fw-bold mb-3">Order #NX-48291</h5>
+            <p class="small text-muted mb-0">A confirmation email has been sent to your address.<br>You can track your order in your profile.</p>
+        </div>
+
+        <div class="mt-5">
+            <a asp-controller="Home" asp-action="Index" class="btn btn-outline-accent rounded-pill px-5 py-3 fw-bold">BACK TO STORE</a>
+        </div>
+    </div>
+</div>
+
+<style>
+.animate-pulse {
+    animation: pulse 2s infinite;
+}
+@@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+}
+.btn-outline-accent {
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    transition: all 0.3s ease;
+}
+.btn-outline-accent:hover {
+    background: var(--accent);
+    color: var(--bg-dark);
+}
+</style>

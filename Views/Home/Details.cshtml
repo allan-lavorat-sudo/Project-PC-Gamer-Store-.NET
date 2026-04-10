@@ -1,0 +1,54 @@
+@model Project_NexoGamer_Store.Models.Product
+
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<div class="container my-5">
+    <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+            <div class="product-gallery rounded-4 overflow-hidden shadow-lg border border-secondary border-opacity-25">
+                <img src="@Model.ImageUrl" class="img-fluid w-100" alt="@Model.Name">
+            </div>
+        </div>
+        <div class="col-md-6 ps-md-5">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-action="Index">Store</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">@Model.Name</li>
+                </ol>
+            </nav>
+            <h1 class="display-4 fw-bold mb-3">@Model.Name</h1>
+            <p class="lead text-muted mb-4">@Model.Description</p>
+            
+            <div class="specs-box mb-4 p-4 rounded-4 bg-dark bg-opacity-50 border border-secondary border-opacity-25">
+                <h5 class="fw-bold mb-3"><i class="bi bi-cpu pe-2 text-accent"></i>Specifications</h5>
+                <ul class="list-unstyled mb-0">
+                    @foreach(var spec in Model.Specs)
+                    {
+                        <li class="mb-2"><i class="bi bi-check2-circle text-accent ps-1 pe-2"></i>@spec</li>
+                    }
+                </ul>
+            </div>
+
+            <div class="d-flex align-items-center gap-4 mb-5">
+                <span class="display-5 fw-bold text-accent">$@Model.Price</span>
+                <form asp-controller="Cart" asp-action="Add" method="post">
+                    <input type="hidden" name="id" value="@Model.Id" />
+                    <input type="hidden" name="name" value="@Model.Name" />
+                    <input type="hidden" name="price" value="@Model.Price" />
+                    <input type="hidden" name="image" value="@Model.ImageUrl" />
+                    <button type="submit" class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-bold shadow-lg">ADD TO CART</button>
+                </form>
+            </div>
+
+            <div class="shipping-info p-3 rounded-3 bg-secondary bg-opacity-10 border border-secondary border-opacity-10 d-flex align-items-center">
+                <i class="bi bi-truck fs-3 pe-3 text-accent"></i>
+                <div>
+                    <div class="fw-bold">Free Shipping</div>
+                    <div class="small text-muted">Estimated delivery within 3-5 business days</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
